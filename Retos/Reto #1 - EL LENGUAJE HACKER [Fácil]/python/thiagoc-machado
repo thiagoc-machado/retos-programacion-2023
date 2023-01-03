@@ -1,0 +1,73 @@
+print("********** ESCREVA SEU TEXTO *********")
+
+text = input()
+list_text = []
+
+def hacker(letter):
+    hachekr_letter = ""
+    match letter:
+        case "A" | "a":
+            hachekr_letter = "4"
+        case "B" | "b":
+            hachekr_letter = "I3"
+        case "C" | "c":
+            hachekr_letter = "["
+        case "D" | "d":
+            hachekr_letter = ")"
+        case "E" | "e":
+            hachekr_letter = "3"
+        case "F" | "f":
+            hachekr_letter = "|="
+        case "G" | "g":
+            hachekr_letter = "&"
+        case "H" | "h":
+            hachekr_letter = "#"
+        case "I" | "i":
+            hachekr_letter = "1"
+        case "J" | "j":
+            hachekr_letter = ",_|"
+        case "K" | "k":
+            hachekr_letter = ">|"
+        case "L" | "l":
+            hachekr_letter = "1"
+        case "M" | "m":
+            hachekr_letter = "[V]"
+        case "N" | "n":
+            hachekr_letter = "^/"
+        case "O" | "o":
+            hachekr_letter = "0"
+        case "P" | "p":
+            hachekr_letter = "|*"
+        case "Q" | "q":
+            hachekr_letter = "(_,)"
+        case "R" | "r":
+            hachekr_letter = "I2"
+        case "S" | "s":
+            hachekr_letter = "5"
+        case "T" | "t":
+            hachekr_letter = "7"
+        case "U" | "u":
+            hachekr_letter = "(_)"
+        case "V" | "v":
+            hachekr_letter = "\/"
+        case "W" | "w":
+            hachekr_letter = "\/\/"
+        case "X" | "x":
+            hachekr_letter = "><"
+        case "Y" | "y":
+            hachekr_letter = "j"
+        case "Z" | "z":
+            hachekr_letter = "2"
+        case " " | " ":
+            hachekr_letter = " "
+        case "É" | "é":
+            hachekr_letter = "3´"
+
+    return hachekr_letter
+
+
+for i in range(len(text)):
+    list_text.append(hacker(text[i]))
+
+print("************ SEU TEXTO HACKER *********")
+print(''.join(list_text))
